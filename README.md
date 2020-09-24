@@ -43,7 +43,9 @@ func (d *DetailMusicCall) HandleResponse(resp *http.Response, chout chan<- restc
 
 #### Send the Rescall Struct to a channel, and start the rest crawler to process it. 
 ```go
-   wg.Add(1)
+	searchCh := make(chan restcrawler.RestCall)
+
+    wg.Add(1)
 	go func() {
 		defer wg.Done()
 		for i := 0; i < 10; i++ {
