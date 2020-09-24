@@ -65,6 +65,10 @@ func (d *DetailMusicCall) HandleResponse(resp *http.Response, chout chan<- restc
     go searchRc.Run(&wg)
     wg.Wait()
 ```
+## Sample Application 
+```bash
+go run ./example/spotify/main.go <spotify_oauth_token>
+```
 
 ## Features
 1. Configurable Pool size for every type of rest endpoint.
