@@ -1,4 +1,4 @@
-# Rest Rrawler
+# Rest Crawler
 Rest Crawler is a Go library that can be used to quickly extract data from various restful endpoint. It abstract away the implementation of rate limit retries, backoff and concurrency from developer. Developer could focus on implementing request and handling response. 
 
 ## Quick Start
